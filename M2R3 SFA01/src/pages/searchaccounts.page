@@ -1,0 +1,25 @@
+<apex:page standardController="account" recordSetVar="accounts" tabStyle="Account" extensions="accsearchcontroller">  
+  <apex:form >  
+  <apex:sectionheader title="Search Account"/>
+ <apex:inputText value="{!searchstring}" label="Input"/>   
+  <apex:commandButton value="Search account" action="{!search}"/>  
+  <!-- <apex:commandButton value="Clear account" action="{!search}"/>  -->
+   <apex:pageBlock title="Search Result">  
+    <apex:pageblockTable value="{!acc}" var="a">  
+     <apex:column >  
+      
+     </apex:column>  
+     <apex:column value="{!a.name}"/>    
+     <apex:column value="{!a.ownerid}"/>
+      <apex:column value="{!a.Identification_Number__c}"/>
+      <apex:column value="{!a.Segment_Code__c}"/>
+    </apex:pageBlockTable>     
+   </apex:pageBlock>  
+   
+     <apex:panelGrid columns="4">
+    </apex:panelGrid>
+   
+   
+    
+  </apex:form>  
+ </apex:page>

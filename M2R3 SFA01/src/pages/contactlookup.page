@@ -1,0 +1,6 @@
+<apex:page standardcontroller="Contact">
+<apex:form >
+<apex:inputField value="{!Contact.OwnerId}"/>
+<apex:inputField value="{!Contact.AccountId}"/>
+</apex:form>
+</apex:page>

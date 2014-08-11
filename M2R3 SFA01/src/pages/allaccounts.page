@@ -1,0 +1,12 @@
+<apex:page controller="TestQueryController">
+  <apex:form >
+    <apex:sectionheader title="List of All Accounts"/>
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!accounts}" var="co">
+            <apex:column value="{!co.Name}"/>
+            <apex:column value="{!co.OwnerId}"/>
+
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+  </Apex:form>
+</apex:page>

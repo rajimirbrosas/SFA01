@@ -1,0 +1,15 @@
+<apex:page sidebar="false" standardController="Siebel_Order__c" extensions="SiebelOrderExtension" title="Siebel Order Details">
+    <apex:form title="Siebel Order Details">
+        <apex:pageBlock title="Siebel Order Details">
+            <apex:pageBlockSection columns="1">
+                <apex:outputField value="{!Siebel_Order__c.OpportunityId__c}"/>
+                <apex:inputField value="{!Siebel_Order__c.Status__c}"/>
+                <apex:inputField value="{!Siebel_Order__c.Name}"/>
+            </apex:pageBlockSection>
+             <apex:pageBlockButtons location="top">
+                 <apex:commandButton value="Save" action="{!save}"/>
+                 <apex:commandButton value="Cancel" action="{!cancel}"/>
+             </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
